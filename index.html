@@ -778,7 +778,7 @@ a { color: inherit; text-decoration: none; }
 
   new IntersectionObserver((entries, io) => {
     if (entries.some((e) => e.isIntersecting)) { reveal(); io.disconnect(); }
-  }, { threshold: 0.35 }).observe(panel);
+  }).observe(panel);
 })();
   </script>
 </body>
